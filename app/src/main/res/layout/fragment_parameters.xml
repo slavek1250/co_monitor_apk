@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ParametersFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/paramLayTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/paramTxtTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="14:35"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/paramTxtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="2020-02-09"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/paramProgBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/paramLayParams"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView1211"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Zadana temperatura"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtMainTemp"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="°C"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Przerwa podajnika"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtFdrBrk"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="s"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Liczba obrotów"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtRPC"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="RPC"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Histereza"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtHist"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="°C"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Maksymalna \ntemperatura podajnika"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtMaxTempFdr"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:width="5dp"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="°C"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:singleLine="false"
+                            android:text="Maksymalny dystans \nod powierzchni paliwa"
+                            android:textSize="18sp" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/paramEdtMaxDist"
+                            android:layout_width="60dp"
+                            android:layout_height="match_parent"
+                            android:width="5dp"
+                            android:ems="10"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="cm"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/paramBtnCancel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Anuluj" />
+
+                        <Button
+                            android:id="@+id/paramBtnSave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Zapisz" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
