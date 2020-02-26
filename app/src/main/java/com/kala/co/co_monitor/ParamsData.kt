@@ -11,8 +11,8 @@ import kotlin.collections.ArrayList
 
 class ParamsData(val apiRespCallback: () -> Unit) {
 
-    val API_URL = "http://co.slavek.webd.pro/api/get_curr_params.php?api_key=apk"
-    val API_URL_SET = "http://co.slavek.webd.pro/api/set_new_params.php?api_key=apk"
+    val API_URL = "url"
+    val API_URL_SET = "url"
 
     class SingleParam(
         val defId: Int,

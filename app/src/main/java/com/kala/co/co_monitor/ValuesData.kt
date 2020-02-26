@@ -10,7 +10,7 @@ import java.util.*
 
 class ValuesData(val newDataCallback: () -> Unit) {
 
-    val API_URL = "http://co.slavek.webd.pro/api/get_curr_measures.php?api_key=apk"
+    val API_URL = "url"
 
     class SingleValue(
         val name: String,

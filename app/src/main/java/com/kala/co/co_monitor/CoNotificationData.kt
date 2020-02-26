@@ -8,7 +8,7 @@ import java.io.StringReader
 object CoNotificationData {
 
     private lateinit var apiRespCallback: () -> Unit
-    private val API_URL = "http://co.slavek.webd.pro/api/get_curr_event.php?api_key=apk"
+    private val API_URL = "usr"
 
     private var handled = false
     private var eventId = 0
