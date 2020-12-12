@@ -94,6 +94,10 @@ class ParamsData(val apiRespCallback: () -> Unit) {
         return currParam.defId
     }
 
+    fun clearParamsList() {
+        paramsListNotSaved.clear()
+    }
+
     fun setParam(name: String, value: Int) {
         paramsListNotSaved.add(
             SingleParam(

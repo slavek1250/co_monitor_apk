@@ -43,7 +43,8 @@ class ParametersFragment : Fragment() {
                 Pair("feeder_revo_num", paramEdtRPC),
                 Pair("hist", paramEdtHist),
                 Pair("fmt", paramEdtMaxTempFdr),
-                Pair("fmd", paramEdtMaxDist)
+                Pair("fmd", paramEdtMaxDist),
+                Pair("hmt", paramEdtMimTemp)
 
             )
             paramBtnCancel.setOnClickListener { reloadParams() }
@@ -142,6 +143,7 @@ class ParametersFragment : Fragment() {
     }
 
     private fun saveNewParams() {
+        paramsData.clearParamsList()
         paramsEditList?.forEach {
             paramsData.setParam(it.first, it.second.text.toString().toInt())
         }
